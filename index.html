@@ -8,16 +8,16 @@
 	<header class="main-header">
 		<nav class="main-nav">
 			<a class="main-header-logo">
-			<img src="img/logo.svg" width="154" height="64" alt="Логотип Магазина мороженного Gllacy">
+			<img src="img/logo.svg" width="154" height="64" alt="Логотип Магазина мороженного Gllacy" style="background-color: red">
 			</a>
 			<ul class="main-nav-list">
-				<li><a href="#">Каталог</a>
+				<li><a href="catalog.html">Каталог</a>
 				<ul class="catalog-nav-list">
-					<li class="catalog-nav-list-new"><a href="#">Новинки</a></li>
-					<li class="catalog-nav-item"><a href="#">Сливочное</a></li>
-					<li class="catalog-nav-item"><a href="#">Щербет</a></li>
-					<li class="catalog-nav-item"><a href="#">Фруктовый лёд</a></li>
-					<li class="catalog-nav-item"><a href="#">Мелорин</a></li>
+					<li class="catalog-item-new"><a href="#">Новинки</a></li>
+					<li class="catalog-item"><a href="#">Сливочное</a></li>
+					<li class="catalog-item"><a href="#">Щербет</a></li>
+					<li class="catalog-item"><a href="#">Фруктовый лёд</a></li>
+					<li class="catalog-item"><a href="#">Мелорин</a></li>
 				</ul>
 				</li>
 				<li><a href="#">Доставка и оплата</a></li>
@@ -42,13 +42,13 @@
 			<div class="banner-left">
 				<h3>Малинка даром!</h3>
 				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-				<button class="banner-bottom" value="Хочу варенье!">Хочу варенья!</button>
+				<a class="button banner" href="#">Хочу варенья!</a>
 			</div>
 			<div class="banner-right">
 				<h3>Шоколадки даром!</h3>
 				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
 				</p>
-				<button class="banner-bottom" value="Хочу шоколадки!">Хочу шоколадки!</button>
+				<a class="button banner" href="#">Хочу шоколадки!</a>
 			</div>
 		</section>
 		<section class="bestsellers">
@@ -87,7 +87,54 @@
 				</li>
 			</ul>
 		</section>
+		<section class="advantage">
+			<h2 class="visually-hidden">Наши преимущества</h2>
+			<p>Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженного собственного производства на развес</p>
+			<ul class="advantage-list">
+				<li class="advantage-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных времинем технологий</li>
+				<li class="advantage-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</li>
+				<li class="advantage-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, к которыми нас связывает долговременное сотрудничество</li>
+				<li class="advantage-item">Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</li>
+			</ul>
+		</section>
+		<section class="new-blog">
+			<h2>Новое в нашем блоге</h2>
+			<a class="new-post-blog" href="#">
+				<p>10 способов сервировки фруктовых щербетов к столу</p>
+			</a>
+		</section>
+		<section class="subscribe">
+			<h2 class="visually-hidden">Подпишись на нашу рассылку</h2>
+			<p>Подпишитесь на нашу сладкую рассылку и будете всегда вкурсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+			<form class="subscribe">
+			<input type="email" name="email">
+			<input type="submit" value="Отправить">
+			</form>
+		</section>
 	</main>
-
+	<footer class="main-footer">
+		<section class="fotter-map">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<!-- Тут будет карта -->
+		</section>
+		<div class="footer-social">
+			<ul class="footer-social_list">
+				<li class="footer-social_tweet"><a href="#">Tweeter</a></li>
+				<li class="footer-social_inst"><a href="#">Instagramm</a></li>
+				<li class="footer-social_fb"><a href="#">Facebook</a></li>
+				<li class="footer-social_vk"><a href="#">В контакте</a></li>
+			</ul>
+		</div>
+		<p class="footer-about_us">
+			<a class="for_dist" href="#">Для поставщиков</a>
+			<a href="#">О производстве</a>
+			<a href="#">Наши документы</a>
+			<a href="#">Экологические стандарты</a>
+		</p>
+		<p class="footer-copyright">
+			<a href="#"><img src="img/htmlacademy.png" alt="Логотип HTML Academy"></a>
+			Сделано в <a href="#">HTML Academy</a> © 2017
+		</p>
+	</footer>
 </body>
 </html>
