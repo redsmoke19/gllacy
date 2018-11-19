@@ -42,7 +42,82 @@
                 <a>Сливочное</a>
             </li>
         </ul>
-        <h1 class="page-title">Сливочное мороженое</h1>
+		<section class="filters">
+        	<h2 class="page-title">Сливочное мороженое</h2>
+			<form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="rangeoutput.value=rangecount.value">
+				<fieldset>
+					<legend class="filter-legend">Сортировка:</legend>
+					<ul>
+						<li class="filter-option">
+							<select name="sorting" id="filter-sorting">
+								<option value="popularity" selected>по популярности</option>
+								<option value="increase-price">сначала недорогие</option>
+								<option value="descending-price">сначала дорогие</option>
+								<option value="fat">по жирности</option>
+							</select>
+							<label for="filter-sorting" class="visually-hidden">Сортировка</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend class="filter-legend">Цена:</legend>
+					<output for="filter-range" name="rangeoutput"></output>
+						<ul>
+							<li class="filter-option">
+								<input type="range" name="rangecount" min="0" max="1000" step="50" id="filter-range" value="100">
+								<label for="filter-range" class="visually-hidden">Выбор по цене</label>
+							</li>
+						</ul>
+				</fieldset>
+				<fieldset>
+					<legend class="filter-legend">Жирность:</legend>
+					<ul>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="zero-percent" id="filter-zeropercent">
+							<label for="filter-zeropercent">0%</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="ten-percent" id="filter-tenpercent" checked>
+							<label for="filter-tenpercent">10%</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="thirty-percent" id="filter-thirtypercent">
+							<label for="filter-thirtypercent">30%</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="over-percent" id="filter-overpercent">
+							<label for="filter-overpercent">выше 30%</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend class="filter-legend">Наполнители:</legend>
+					<ul>
+						<li class="filter-option">
+							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="chocolate" id="filter-chocolate" checked>
+							<label for="filter-chocolate">шоколадные</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="sugar" id="filter-sugar" checked>
+							<label for="filter-sugar">сахарные присыпки</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="fruits" id="filter-fruit">
+							<label for="filter-fruit">фрукты</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="syrup" id="filter-syrup">
+							<label for="filter-syrup">сиропы</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="jam" id="filter-jam">
+							<label for="filter-jam">джемы</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="filter-button" type="submit">Применить</button>
+			</form>
+		</section>
         <!--Здесь будет форма-->
         <section class="catalog">
             <h2 class="visually-hidden">Каталог продукции</h2>

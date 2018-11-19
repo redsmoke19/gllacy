@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="484bab29-cc5f-48ee-915b-50df9a2ae3f0" name="Default Changelist" comment="" />
+    <list default="true" id="484bab29-cc5f-48ee-915b-50df9a2ae3f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Barbershop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Barbershop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Barbershop/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Barbershop/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +53,47 @@
     <session id="1922404950">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="976" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="976" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-504455270">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="1162" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1162" />
         </counts>
       </usages-collector>
     </session>
@@ -59,20 +103,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/site/gllacy/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+            <state relative-caret-position="296">
+              <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Documents/site/gllacy/catalog.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Barbershop/shop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4205">
-              <caret line="259" column="57" selection-start-line="259" selection-start-column="57" selection-end-line="259" selection-end-column="57" />
+            <state relative-caret-position="-467">
+              <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -90,8 +134,10 @@
         <option value="$PROJECT_DIR$/../Barbershop/index.html" />
         <option value="$PROJECT_DIR$/../Barbershop/shop.html" />
         <option value="$PROJECT_DIR$/../Barbershop/price.html" />
-        <option value="$PROJECT_DIR$/catalog.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/../Barbershop/shop.html" />
+        <option value="$PROJECT_DIR$/catalog.html" />
+        <option value="$PROJECT_DIR$/catalog.html" />
       </list>
     </option>
   </component>
@@ -112,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,24 +167,24 @@
             </path>
             <path>
               <item name="gllacy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gllacy" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="Barbershop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/Documents/site" />
+      <recent name="$PROJECT_DIR$/.." />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,17 +215,19 @@
       <workItem from="1540655401316" duration="16000" />
       <workItem from="1540655928271" duration="230000" />
       <workItem from="1540912216755" duration="6355000" />
-      <workItem from="1542486625450" duration="536000" />
+      <workItem from="1542486625450" duration="6075000" />
+      <workItem from="1542639749620" duration="1642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7579000" />
+    <option name="totallyTimeSpent" value="14760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="961" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984456" visible="true" weight="0.18192919" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984456" visible="true" weight="0.18376069" />
       <window_info id="Structure" order="1" sideWeight="0.50051814" side_tool="true" weight="0.16999003" />
       <window_info id="Favorites" order="2" sideWeight="0.5015544" side_tool="true" weight="0.16999003" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -193,7 +240,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32865497" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32796317" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -209,113 +256,113 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$USER_HOME$/Documents/site/gllacy" />
+      <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/studio.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/studio.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-small-1.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-small-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-big-1.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-big-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-small-2.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-small-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-small-3.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-small-3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/sub-logo.svg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/sub-logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/item.html">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/item.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/index.html">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-2.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-5.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-5.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-1.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-3.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-4.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/img/product-6.jpg">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/img/product-6.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/shop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/site/Barbershop/price.html">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/price.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/orange_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/orange_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/chocolate_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/chocolate_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/strawberry_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/strawberry_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/creambrule_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/creambrule_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/cowberry_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/cowberry_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/blueberry_icecream.jpg" />
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/blueberry_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/blueberry_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/lemon_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/lemon_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/chocolatechips_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/chocolatechips_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/img/vanilla_icecream.png">
+    <entry file="file://$PROJECT_DIR$/img/vanilla_icecream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="334">
           <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/site/gllacy/catalog.html">
+    <entry file="file://$PROJECT_DIR$/../Barbershop/shop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4205">
-          <caret line="259" column="57" selection-start-line="259" selection-start-column="57" selection-end-line="259" selection-end-column="57" />
+        <state relative-caret-position="-467">
+          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
         </state>
       </provider>
     </entry>
