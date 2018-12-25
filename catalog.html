@@ -2,17 +2,20 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Мазагин мороженного Gllacy</title>
 </head>
 <body>
 	<header class="main-header">
 		<nav class="main-nav">
 			<a class="main-header-logo">
-			<img src="img/logo.svg" width="154" height="64" alt="Логотип Магазина мороженного Gllacy" style="background-color: red">
+			<img src="img/logo.svg" width="154" height="64" alt="Логотип Магазина мороженного Gllacy">
 			</a>
 			<ul class="main-nav-list">
 				<li class="main-nav-current"><a href="#">Каталог</a>
-				<ul class="sub-nav-list">
+				<ul class="main-subnav-list">
 					<li class="sub-nav-item_new"><a href="#">Новинки</a></li>
 					<li class="sub-nav-item"><a href="#">Сливочное</a></li>
 					<li class="sub-nav-item"><a href="#">Щербет</a></li>
@@ -73,19 +76,19 @@
 					<legend class="filter-legend">Жирность:</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="zero-percent" id="filter-zeropercent">
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="fat-percent" id="filter-zeropercent">
 							<label for="filter-zeropercent">0%</label>
 						</li>
 						<li class="filter-option">
-							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="ten-percent" id="filter-tenpercent" checked>
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="fat-percent" id="filter-tenpercent" checked>
 							<label for="filter-tenpercent">10%</label>
 						</li>
 						<li class="filter-option">
-							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="thirty-percent" id="filter-thirtypercent">
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="fat-percent" id="filter-thirtypercent">
 							<label for="filter-thirtypercent">30%</label>
 						</li>
 						<li class="filter-option">
-							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="over-percent" id="filter-overpercent">
+							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="fat-percent" id="filter-overpercent">
 							<label for="filter-overpercent">выше 30%</label>
 						</li>
 					</ul>
@@ -313,25 +316,23 @@
         </section>
     </main>
 	<footer class="main-footer">
-		<section class="fotter-map">
-			<h2 class="visually-hidden">Как нас найти</h2>
-		</section>
 		<div class="footer-social">
-			<ul class="footer-social_list">
-				<li class="footer-social_tweet"><a href="#">Tweeter</a></li>
-				<li class="footer-social_inst"><a href="#">Instagramm</a></li>
-				<li class="footer-social_fb"><a href="#">Facebook</a></li>
-				<li class="footer-social_vk"><a href="#">В контакте</a></li>
+			<ul class="footer-social-list">
+				<li class="footer-social__tweet"><a href="#">Tweeter</a></li>
+				<li class="footer-social__inst"><a href="#">Instagramm</a></li>
+				<li class="footer-social__fb"><a href="#">Facebook</a></li>
+				<li class="footer-social__vk"><a href="#">В контакте</a></li>
 			</ul>
 		</div>
-		<p class="footer-about_us">
+		<p class="footer-about">
 			<a class="for_dist" href="#">Для поставщиков</a>
 			<a href="#">О производстве</a>
 			<a href="#">Наши документы</a>
 			<a href="#">Экологические стандарты</a>
 		</p>
 		<p class="footer-copyright">
-			<a href="#"><img src="img/htmlacademy.png" alt="Логотип HTML Academy"></a>
+			<!-- Добавить ссылке адаптив -->
+			<a href="#"></a>
 			Сделано в <a href="#">HTML Academy</a> © 2017
 		</p>
 	</footer>
