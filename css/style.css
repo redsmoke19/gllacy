@@ -41,6 +41,21 @@ a {
     padding: 0 30px;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .main {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 20px;
@@ -167,28 +182,38 @@ a {
 .main-header-logo {
     width: 154px;
     height: 64px;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
 .main-nav-list {
-    width: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 680px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.main-nav-list a {
+.main-nav-list > li > a {
+    padding: 10px 15px;
     color: #ffffff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+    border-radius: 20px;
 }
 
-.main-nav-list a:hover,
-.main-nav-list a:focus {
+.main-nav-list > li:last-child > a {
+    margin-right: 0;
+}
+
+.main-nav-list > li > a:hover,
+.main-nav-list > li > a:focus {
     color: #333333;
     background-color: #f7f6f3;
 }
 
-.main-nav-list a:active {
+.main-nav-list > li > a:active {
     color: #333333;
     background: #ededed;
     box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.1);
@@ -200,22 +225,76 @@ a {
 }
 
 .user-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 270px;
     margin: 0;
     padding: 0;
     margin-left: auto;
     list-style: none;
 }
 
+.user-nav li:not(:last-child) {
+    margin-right: 10px;
+}
+
 .user-nav a {
+    position: relative;
+    display: block;
+    vertical-align: middle;
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
     background-color: rgba(255, 255, 255, 0.2);
+    padding: 9px 17px 9px 45px;
+    font-weight: 500;
+    border-radius: 20px;
 }
 
-.user-nav a:hover {
+.user-nav .login-site::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/svg/login-light.svg") no-repeat 0 0;
+}
+
+.user-nav .login-site:hover::before {
+    background: url("../img/svg/login-dark.svg");
+}
+
+.user-nav .basket::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/svg/basket.svg") no-repeat 0 0;
+}
+
+.user-nav .search {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.user-nav li:not(:last-of-type) a:hover {
     color: #333333;
     background-color: #f8f7f4;
+}
+
+.user-nav .search:hover path,
+.user-nav .search:focus path {
+    fill: #000000;
 }
 
 /* About Work and Breadcrumbs */
