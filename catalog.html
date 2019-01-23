@@ -16,32 +16,38 @@
 			</a>
 			<ul class="main-nav-list">
 				<li><a class="current-link" href="catalog.html">Каталог</a>
-					<ul class="main-subnav-list">
-						<li class="main-subnav-item">
-							<a href="#">Новинки</a>
-						</li>
-						<li class="main-subnav-item">
-							<a href="#">Сливочное</a>
-						</li>
-						<li class="main-subnav-item">
-							<a href="#">Щербет</a>
-						</li>
-						<li class="main-subnav-item">
-							<a href="#">Фруктовый лёд</a>
-						</li>
-						<li class="main-subnav-item">
-							<a href="#">Мелорин</a>
-						</li>
-					</ul>
+                    <ul class="main-subnav-list">
+                        <li class="main-subnav-item">
+                            <span class="main-subnav-item__new">Новинки</span>
+                        </li>
+                        <li class="main-subnav-item">
+                            <a href="#">Сливочное</a>
+                        </li>
+                        <li class="main-subnav-item">
+                            <a class="current-link" href="#">Щербет</a>
+                        </li>
+                        <li class="main-subnav-item">
+                            <a href="#">Фруктовый лёд</a>
+                        </li>
+                        <li class="main-subnav-item">
+                            <a href="#">Мелорин</a>
+                        </li>
+                    </ul>
 				</li>
 				<li><a href="#">Доставка и оплата</a></li>
 				<li><a href="#">О Компании</a></li>
 			</ul>
-			<ul class="user-nav">
-				<li class="user-nav-item"><a href="#">Поиск</a></li>
-				<li class="user-nav-item"><a href="#">Войти</a></li>
-				<li class="user-nav-item"><a href="#">Пусто</a></li>
-			</ul>
+            <ul class="user-nav">
+                <li>
+                    <a class="search" href="#"><span class="visually-hidden">Поиск</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129" width="17px" height="17px">
+                            <g><path d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z" fill="#FFFFFF"/></g>
+                        </svg>
+                    </a>
+                </li>
+                <li><a class="login-site" href="#">Войти</a></li>
+                <li><a class="basket" href="#">Пусто</a></li>
+            </ul>
 		</div>
 	</nav>
 </header>
@@ -68,7 +74,7 @@
 			<form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="rangeoutput.value=rangecount.value">
 				<div class="filter-top-wrapper">
 					<fieldset class="filter-top">
-						<!-- <legend class="filter-legend">Сортировка:</legend> -->
+						<legend class="filter-legend">Сортировка:</legend>
 						<label for="filter-sorting" class="visually-hidden">Сортировка:</label>
 						<div class="filter-select-wrapper">
 							<div class="filter-select"></div>
@@ -81,8 +87,8 @@
 						</div>
 					</fieldset>
 					<fieldset class="filter-top">
-						<!-- <legend class="filter-legend">Цена:</legend> -->
-						<label for="filter-range" class="visually-hidden">Цена:</label>
+						<legend class="filter-legend visually-hidden">Цена:</legend>
+						<label for="filter-range">Цена:</label>
 						<output for="filter-range" name="rangeoutput"></output>
 						<div class="filter-range">
 							<input type="range" name="rangecount" min="0" max="1000" step="50" id="filter-range" value="100">
