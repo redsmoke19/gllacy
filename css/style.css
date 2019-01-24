@@ -1138,7 +1138,6 @@ input[type="radio"].visually-hidden {
 
 .filter-radio-list {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -1150,6 +1149,11 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.filter-radio-item {
+    position: relative;
+    padding-left: 50px;
+}
+
 .filter-input-radio {
     margin-right: 10px;
 }
@@ -1159,6 +1163,29 @@ input[type="radio"].visually-hidden {
     padding: 0;
     font-size: 16px;
     line-height: 18px;
+    cursor: pointer;
+}
+
+.filter-input-radio + label::before {
+    content: " ";
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+    opacity: 0.8;
+    background: url("../img/svg/radio.svg") no-repeat 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    width: 8px;
+    height: 8px;
+    opacity: 0.8;
+    background: url("../img/svg/circle.svg") no-repeat 0 0;
 }
 
 /* Form bottom */
@@ -1175,15 +1202,15 @@ input[type="radio"].visually-hidden {
     margin-right: 15px;
     list-style: none;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border: none;
     border-radius: 90px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.filter-input-checkbox {
-    margin-right: 10px;
+.filter-option-item {
+    position: relative;
+    padding-left: 52px;
 }
 
 .filter-option-item label {
@@ -1191,6 +1218,39 @@ input[type="radio"].visually-hidden {
     padding: 0;
     font-size: 16px;
     line-height: 18px;
+    cursor: pointer;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+    background: url("../img/svg/checkbox-off.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+    display: none;
+}
+
+.filter-input-checkbox:checked +label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    opacity: 0.8;
+    width: 24px;
+    height: 20px;
+    background: url("../img/svg/checkbox-on.svg") no-repeat;
+    /*
+    width: 25px;
+    height: 20px;
+    background: url("../img/svg/correct-symbol.svg") no-repeat 0 0;
+    z-index: 1;
+    */
 }
 
 .filter-button-wrapper {
@@ -1225,10 +1285,16 @@ input[type="radio"].visually-hidden {
 
 /* Pagination */
 
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
 .pagination-list {
+    width: 267px;
     margin: 0;
     padding: 0;
-    margin-bottom: 30px;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -1236,17 +1302,54 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
 }
 
+.pagination-item a {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 500;
+    width: 25px;
+    height: 25px;
+    padding: 0 8px;
+    text-align: center;
+    line-height: 26px;
+    vertical-align: middle;
+}
+
 .pagination-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
-.pagination-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.pagination-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 50%;
 }
 
+a.prev:hover {
+    background-color: transparent;
+}
+
+.pagination-item a.pagination-item-current {
+    background-color: #ffffff;
+    color: #323232;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.pagination-item .prev,
+.pagination-item .next {
+    background: url("../img/svg/icon-right-small.svg") no-repeat 50% 50%;
+}
+
+.pagination-item .prev {
+    transform: rotate(180deg);
+}
+
+.pagination-item .disabled {
+    cursor: default;
+    opacity: 0.2;
+}
+
+/*
 .pagination-item a:hover::before {
     content: "";
     background-color: rgba(255, 255, 255, 0.2);
@@ -1256,10 +1359,7 @@ input[type="radio"].visually-hidden {
     width: 25px;
     height: 25px;
 }
-
-.pagination-item a {
-    color: #ffffff;
-}
+*/
 
 
 
