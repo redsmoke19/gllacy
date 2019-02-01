@@ -29,7 +29,8 @@ a {
 }
 
 .container {
-    width: 1200px;
+    position: relative;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -350,7 +351,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    width: 270px;
+    width: 300px;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -401,6 +402,14 @@ input[type="radio"].visually-hidden {
     background: url("../img/svg/basket.svg") no-repeat 0 0;
 }
 
+.user-nav .basket:hover::before,
+.user-nav .basket:focus::before {
+    background: url("../img/svg/basket_dark.svg");
+    transition: all linear 0.3s;
+}
+
+
+
 .user-nav .search {
     margin: 0;
     padding: 0;
@@ -412,8 +421,8 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
-.user-nav li:not(:last-of-type) a:hover,
-.user-nav li:not(:last-of-type) a:focus {
+.user-nav a:hover,
+.user-nav a:focus {
     color: #333333;
     background-color: #f8f7f4;
     transition: all linear 0.3s;
@@ -1526,10 +1535,11 @@ a.prev:hover {
 /*Modal Basket*/
 
 .basket-full {
+    display: none;
     padding: 20px;
     width: 540px;
     top: 55px;
-    right: 30px;
+    right: 70px;
 }
 
 .basket-full p {
@@ -1543,20 +1553,47 @@ a.prev:hover {
 
 .basket-product-list {
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .basket-product-item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .basket-product-name {
-    width: 280px;
+    position: relative;
+    width: 300px;
     display: flex;
     align-items: center;
+    padding-left: 30px;
+}
 
+.basket-product-name::before,
+.basket-product-name::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background: #323232;
+    left: 5px;
+}
+
+.basket-product-name::before {
+    transform: rotate(45deg);
+}
+
+.basket-product-name::after {
+    transform: rotate(-45deg);
+}
+
+.basket-product-name img {
+    margin-right: 15px;
 }
 
 .basket-product-select {
@@ -1566,7 +1603,22 @@ a.prev:hover {
     color: #999999;
 }
 
-.basket-product-price {
+li .basket-product-price  {
+    margin-right: 10px;
+}
+
+.modal .basket-product-coast {
+    float: right;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.basket-button {
+    padding: 10px 15px;
+    clear: both;
+    float: right;
 }
 
 
