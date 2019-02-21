@@ -221,6 +221,7 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
+    z-index: 50;
 }
 
 .main-nav-wrapper {
@@ -1364,7 +1365,7 @@ a.prev:hover {
 .modal {
     position: fixed;
     background-color: #f8f7f4;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
     z-index: 11;
     border-radius: 8px;
 }
@@ -1390,15 +1391,53 @@ a.prev:hover {
     border-color: #2e88e4;
 }
 
+.modal-close__form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.modal-close__form::before,
+.modal-close__form::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 7px;
+    width: 3px;
+    height: 25px;
+    background-color: #0d0d0d;
+    transition: all .2s linear;
+}
+
+.modal-close__form::before {
+    transform: rotate(45deg);
+}
+
+.modal-close__form::after {
+    transform: rotate(-45deg);
+}
+
+.modal-close__form:hover::before,
+.modal-close__form:hover::after {
+    background-color: #cccccc;
+}
+
 /* Modal Login */
 
 .modal-login {
-    display: block;
+    display: none;
     padding: 20px;
     width: 300px;
     top: 55px;
     left: 50%;
-    margin-left: 200px;
+    margin-left: 160px;
+    z-index: 30;
 }
 
 .modal-description {
@@ -1457,7 +1496,7 @@ a.prev:hover {
 /* Modal Search */
 
 .modal-search {
-    display: block;
+    display: none;
     position: absolute;
     width: 350px;
     padding: 20px;
@@ -1481,12 +1520,13 @@ a.prev:hover {
 /* Teatarea */
 
 .modal-feedback {
-    display: block;
+    display: none;
     padding: 20px;
     width: 480px;
     top: 330px;
     left: 50%;
     margin-left: -250px;
+    z-index: 30;
 }
 
 .modal-feedback h2 {
@@ -1628,8 +1668,73 @@ li .basket-product-price  {
 
 /*End modal Windows*/
 
+/* JS */
+
+.modal-show__form {
+    display: block;
+    animation-name: modal-show;
+    animation-duration: .4s;
+}
 
 
+.modal-show__login {
+    display: block;
+    animation-name: modal-login;
+    animation-duration: .2s;
+}
+
+.js-modal-error {
+    animation-name: modal-error;
+    animation-duration: .4s;
+}
+
+/* Animation */
+
+@keyframes modal-show {
+    0% { transform: scale(0) }
+    100% { transform: scale(1) }
+}
+
+@keyframes modal-login {
+    0% { transform: translateY(-1000px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes modal-close {
+    0% { transform: scale(1) }
+    100% { transform: scale(0)}
+}
+
+@keyframes modal-error {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+@keyframes overlay {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 20; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlay-show {
+    display: block;
+    animation-name: overlay;
+    animation-duration: .2s;
+}
 
 
 
