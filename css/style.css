@@ -1393,11 +1393,12 @@ a.prev:hover {
 /* Modal Login */
 
 .modal-login {
-    display: none;
+    display: block;
     padding: 20px;
     width: 300px;
     top: 55px;
-    right: 140px;
+    left: 50%;
+    margin-left: 200px;
 }
 
 .modal-description {
@@ -1456,7 +1457,7 @@ a.prev:hover {
 /* Modal Search */
 
 .modal-search {
-    display: none;
+    display: block;
     position: absolute;
     width: 350px;
     padding: 20px;
@@ -1480,7 +1481,7 @@ a.prev:hover {
 /* Teatarea */
 
 .modal-feedback {
-    display: none;
+    display: block;
     padding: 20px;
     width: 480px;
     top: 330px;
@@ -1535,7 +1536,7 @@ a.prev:hover {
 /*Modal Basket*/
 
 .basket-full {
-    display: none;
+    display: block;
     padding: 20px;
     width: 540px;
     top: 55px;
