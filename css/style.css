@@ -818,6 +818,12 @@ input[type="radio"].visually-hidden {
 
 /* Footer Map */
 
+iframe {
+    position: absolute;
+    border: none;
+    z-index: 1;
+}
+
 .footer-map {
     position: relative;
     color: #323232;
@@ -843,6 +849,7 @@ input[type="radio"].visually-hidden {
     padding: 30px 25px;
     background-color: #ffffff;
     border-radius: 10px;
+    z-index: 2;
 }
 
 .footer-map__info {
@@ -1247,7 +1254,7 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-.filter-input-checkbox:checked +label::after {
+.filter-input-checkbox:checked + label::after {
     content: "";
     position: absolute;
     top: 0;
